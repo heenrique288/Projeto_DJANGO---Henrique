@@ -1,0 +1,125 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}{% endblock title %}</title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    </head>
+    <body>
+        <br>
+        <br>
+        <h1>INÍCIO <span class="sino"><i class="bi bi-bell"></span></i></h1>
+        <br>
+        <br>
+        <div class="conteiner">
+            <h2 class="titulo">
+                <img src="{% static 'css/imagens/kung fu panda 4 background.jpg' %}" class="filme1">
+                <p class="genero"><br>Animação<br></p>
+                <p class="nomefilme">Kung Fu Panda 4<nav><ul><li><a class="assistirtrailer" href="{% url 'trailer'%}"><strong class="trailer">Assistir ao trailer <strong class="botao"><i class="bi bi-play-circle"></i></strong></strong></a></li></ul></nav></p>
+                <p class="duracao"><i class="bi bi-clock-history"></i>1h 34min<br><br></p>
+            </h2>
+            <h3 class="subtitulo">
+                <p class="barraoscar">Indicados ao Oscar</p><br><br>
+                {% block content %}{% endblock content %}
+            </h3>
+        </div>
+
+        <main>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1>FILMES EM CARTAZ</h1>
+            <strong><a class="vermais" href="{% url 'emcartaz' %}">Ver Mais</a></strong>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="conteiner">
+                <h4 class="cartaz">
+                    <a href="{% url 'duna' %}"><img src="{% static 'css/imagens/duna poster.jpg' %}" class="filme3"></a>
+                    <br>
+                    <br>
+                    <br>
+                    <p class="diretor">Denis Villeneuve</p>
+                    <br>
+                    <p class="genero2">Duna - Parte 2</p>
+                    <br>
+                    <p class="duracao2"><i class="bi bi-clock-history"></i> 2h 46min<br><br></p>
+                </h4>
+                <h4 class="cartazlado">
+                    <a href="{% url 'menino' %}"><p><img src="{% static 'css/imagens/o menino e a garça poster.jpg' %}" class="filme3"></p></a>
+                    <br>
+                    <br>
+                    <p class="diretor">Hayao Miyazaki</p>
+                    <br>
+                    <p class="genero2">O Menino e a Garça</p>
+                    <br>
+                    <p class="duracao2"><i class="bi bi-clock-history"></i> 2h 04min<br><br></p>
+                </h4>
+                <h4 class="cartazlado">
+                    <a href="{% url 'todos'%}"><p><img src="{% static 'css/imagens/todosmenosvoce.jpg' %}" class="filme3"></p></a>
+                    <br>
+                    <br>
+                    <p class="diretor">Will Gluck</p>
+                    <br>
+                    <p class="genero2">Todos Menos Você</p>
+                    <br>
+                    <p class="duracao2"><i class="bi bi-clock-history"></i> 1h 44min<br><br></p>
+                </h4>
+                <h4 class="cartazlado">
+                    <a href="{% url 'bob'%}"><p><img src="{% static 'css/imagens/bob marley poster.jpg' %}" class="filme3"></p></a>
+                    <br>
+                    <br>
+                    <p class="diretor">Reinaldo Marcus</p>
+                    <br>
+                    <p class="genero2">Bob Marley: One Love</p>
+                    <br>
+                    <p class="duracao2"><i class="bi bi-clock-history"></i> 1h 47min<br><br></p>
+                </h4>
+            </div>
+            <br>
+            <br>
+        </main>
+
+        <nav class="menu-lateral">
+            <img src="{% static 'css/imagens/the film dpt..png' %}" class="banner">
+            <div class="btn-expandir">
+                <i class="bi bi-list" id="btn-exp"></i>
+            </div>
+
+            <ul>
+                <li class="item-menu">
+                    <a href="index.html">
+                        <span class="icon"><i class="bi bi-house"></i></span>
+                        <span class="txt-link">Home</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="{% url 'emcartaz' %}">
+                        <span class="icon"><i class="bi bi-camera-reels"></i></span>
+                        <span class="txt-link">Em Cartaz</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><i class="bi bi-cart-dash"></i></span>
+                        <span class="txt-link">Carrinho</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><i class="bi bi-person-circle"></i></span>
+                        <span class="txt-link">Perfil</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <script src="{% static 'css/menu.js' %}"></script>
+    </body>
+</html>

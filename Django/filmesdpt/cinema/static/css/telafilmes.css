@@ -1,0 +1,91 @@
+.titulofilme {
+    width: 50%;
+    margin-left: 10%;
+}
+
+.filmesemcartaz {
+    color: #F6C500;
+}
+
+.sino1 {
+    color: #F6C500;
+    margin-left:60%;
+}
+
+.filmeback {
+    margin-left: 10%;
+    width: 65%;
+    border: 1px solid #F6C500;
+    border-radius: 10px;
+}
+
+.cartazladofilme {
+    width: 20%; 
+    background-color: #2C343A;
+    border: 1px solid #F6C500;
+    border-radius: 15px;
+}
+
+.cartazladofilme :hover {
+    border-color: #F6C500;
+}
+
+.filmeduna {
+    border-radius: 10px;
+    width: 75%;
+    margin-inline:13%;
+    margin-top: 5%;
+}
+
+.diretorfilme {
+    width: 100%;
+    color: #95999C;
+    text-align: center;
+}
+
+.generofilme {
+    font-family: 'Krona One';
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+    width: 100%;
+    color: #FFFFFF;
+}
+
+.duracaofilme {
+    width: 100%;
+    margin-top: 1%;
+    text-align: center;
+    color: gray;
+}
+
+.secoes {
+    background-color:#2C343A;
+    border: 1px solid #F6C500;
+    border-radius: 0px 0px 16px 16px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5%;
+    width: 15%;
+}
+
+.secoes1 {
+    margin-left: 10%;
+    background-color:#2C343A;
+    border: 1px solid #F6C500;
+    border-radius: 0px 0px 16px 16px;
+    width: 15%;
+}
+
+.horariosecoes{
+    color: #F6C500;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    width: 209px;
+    margin-top: 5%;
+    margin-left: 5%;
+}

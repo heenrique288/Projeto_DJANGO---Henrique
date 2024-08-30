@@ -1,0 +1,15 @@
+body {
+    background-color: black;
+}
+
+iframe {
+    margin-inline: 25%;
+    margin-top: 10%;
+}
+
+@media (max-width:1000px) {
+    iframe {
+        margin-inline: 55%;
+        margin-top: 10%;
+    }
+}

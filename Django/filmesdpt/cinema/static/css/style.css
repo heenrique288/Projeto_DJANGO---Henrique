@@ -1,0 +1,260 @@
+h1{
+    margin-left: 10%;
+    color:#F3F3F3
+}
+
+h3{
+    margin-left: 3%;
+    width: 35%;
+    background-color: #2C343A;
+    border-radius: 3%;
+}
+
+.vermais {
+    margin-left: 85%;
+    font-size: 20px;
+    color: #F3F3F3;
+    background-color: #2C343A;
+    border: 15px solid #2C343A;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.cartaz{
+    width: 20%;
+    margin-left: 10%;
+    background-color: #2C343A;
+    border-radius: 15px;
+}
+
+.cartaz :hover{
+    border-color: #F6C500;
+}
+
+.cartazlado {
+    width: 20%;
+    margin-left: 2%;
+    background-color: #2C343A;
+    border-radius: 15px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.cartazlado :hover {
+    border-color: #F6C500;
+}
+
+.sino {
+    color: #F6C500;
+    margin-left:85%;
+}
+
+.filme1 {
+    width: 100%;
+}
+
+.filmes2 {
+    width: 30%;
+    margin-left: 10%;
+    border-radius: 10%;
+
+    cursor: pointer;
+    margin-top: 2%;
+    border: 1px solid black;
+}
+
+.filme3 {
+    cursor: pointer;
+    border:3px solid black;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-right: 10%;
+}
+
+
+.titulo {
+    width: 50%;
+    margin-left: 10%;
+    background-color: #2C343A;
+    border-radius: 3%;
+}
+
+.subtitulo :hover {
+    border-color: #F6C500;
+}
+.genero {
+    margin-left: 2%;
+    color: #F6C500;
+}
+
+.genero2 {
+    font-size: 28px;
+    margin-left: 10%;
+    color: #F6C500;
+}
+
+.diretor {
+    color: #95999C;
+    margin-left: 10%;
+}
+
+.nomefilme{
+    width: 95%;
+    margin-top: 1%;
+    margin-left: 2%;
+    font-size: 35px;
+    color: white;
+}
+
+.botao{
+    font-size: 25px;
+}
+.trailer {
+    font-size: 17px;
+    margin-left: 60%;
+    color: black;
+    border: 10px solid #F6C500;
+    background-color: #F6C500;
+    border-radius: 10px;
+}
+
+.assistirtrailer{
+    text-decoration: none;
+}
+
+.duracao {
+    margin-top: 1%;
+    margin-left: 2%;
+    color: gray;
+}
+
+.duracao2 {
+    margin-top: 1%;
+    margin-left: 10%;
+    color: gray;
+}
+.conteiner {
+    display: flex;
+}
+
+
+.barraoscar {
+    margin-top: 4%;
+    color: #F6C500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    text-align: center; 
+}
+.dolado {
+    color: #F6C500;
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 5%;
+}
+
+.dolado2 {
+    color: #F6C500;
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 3%;
+    margin-left: 5%;
+}
+
+.descricao {
+    color: #95999C;
+}
+
+/*BARRA LATERAL DO MENU*/
+.banner {
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(63, 63, 63);
+}
+
+nav.menu-lateral {
+    width: 80px;
+    height: 100%;
+    background-color: rgb(36, 34, 34);
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 rgb(201, 199, 71);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+
+nav.menu-lateral.expandir{
+    width: 300px;
+}
+
+.btn-expandir {
+    width: 100%;
+    padding-left: 10px;
+
+}
+
+.btn-expandir > i {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul {
+    height: 100%;
+    list-style-type: none;
+
+}
+
+ul li.item-menu{
+    transition: 1s;
+}
+
+ul li.ativo{
+    background-color: rgb(201, 199, 71);
+}
+
+ul li.item-menu:hover{
+    background-color: rgb(201, 199, 71);
+}
+
+ul li.item-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+ul li.item-menu a .txt-link {
+    margin-left: 70px;
+    transition: .5s;
+    opacity: 0;
+}
+
+nav.menu-lateral.expandir .txt-link {
+    margin-left: 40px;
+    opacity: 1;
+}
+
+ul li.item-menu a .icon > i{
+    font-size: 30px;
+}

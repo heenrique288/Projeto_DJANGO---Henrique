@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Login</title>
+        <link rel="stylesheet" href="{% static "css/login.css" %}">
+    </head>
+
+    <body>
+        <section class="area-login">
+            <div class="login">
+                <div>
+                    <p class="entrada">Bem vindo ao cinema IFRO</p>
+                    <img src="{% static "css/imagens/the film dpt..png" %}">
+                    <p class="entrada">Utilize seus dados para acessar a sua conta</p>
+                </div>
+
+                <form>
+                    <input type="text" id="login" class="input-padrao" required placeholder="seuemail@dominio.com">
+                    <input type="password" id="senha" placeholder="Senha">
+                    <input type="submit" onclick="logar(); return false">
+                </form>
+
+                <script>
+                    function logar() {
+                        var login = document.getElementById('login'). value;
+                        var senha = document.getElementById('senha'). value;
+
+                        if(login == "admin@gmail.com" && senha == "admin") {
+                            alert ('Sucesso');
+                            location.href = "index.html";
+                        }else{
+                            alert('Usuario ou senha incorretos');
+                        }
+                    }
+
+                </script>
+            </div>
+        </section>
+
+
+
+        <nav class="barralateral"></nav>
+    </body>
+</html>

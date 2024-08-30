@@ -1,0 +1,15 @@
+{% extends "cinema/base.html" %}
+
+{% block title %}
+    {{ post.title }}
+{% endblock title %}
+
+{% block content %}
+    <p class="dolado">
+        {{ post.title }}
+    </p>
+    <strong class="descricao">
+        {{ post.body|linebreaks }}
+    </strong>
+
+{% endblock content %}

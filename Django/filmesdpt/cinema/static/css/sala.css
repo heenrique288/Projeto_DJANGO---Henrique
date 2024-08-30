@@ -1,0 +1,107 @@
+/*PARTE DE CIMA DAS SEÇÕES*/
+header {
+    background-color: #2C343A;
+    padding: 20px 0px;
+}
+
+.caixa {
+    position: relative;
+    width: 940px; /*largura*/
+    margin: 0px auto;
+}
+
+.imagem_logo {
+    width: 30%;
+}
+
+.perfil_atendimento {
+    color: #4793AF;
+}
+nav {
+    position: absolute;
+    top: 60px;
+    right: 0px;
+}
+
+nav li {
+    display: inline;
+    margin: 0px 0px 0px 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #C78C19;
+    text-decoration: none;
+}   
+/*FIM DA PARTE DE CIMA DAS SEÇÕES*/
+
+
+.campo_assentos {
+    border-radius: 10px;
+    background-color: #2C343A;
+    width: 940px;
+    margin: 120px auto;
+    padding: 0px 0px 50px 0px;
+}
+
+.titulo_assento {
+    border-radius: 10px 10px 0px 0px;
+    background-color: gray;
+    display: flex;
+    width: 940px;
+    margin: 0px auto;
+    padding: 10px 0px;
+}
+
+.data_hora {
+    margin-left: 5%;
+}
+
+.local {
+    margin-left: 20%;
+}
+
+.numero_esquerda {
+    color: white;
+    font-size: 20px;
+}
+
+.numero_direita {
+    color: white;
+    font-size: 22px;
+    margin-left: 5%;
+}
+
+.numero_direita2 {
+    color: white;
+    font-size: 22px;
+    margin-left: 10%;
+}
+
+.bolinhas {
+    font-size: 30px;
+    color: #4793AF;
+    margin-left: 10%;
+}
+
+.bolinhas2 {
+    font-size: 30px;
+    color: #4793AF;
+    margin-left: 14.3%;
+}
+.bolinhas_semargin {
+    font-size: 30px;
+    color: #4793AF;
+}
+
+.person {
+    font-size: 30px;
+    color: gray;
+}

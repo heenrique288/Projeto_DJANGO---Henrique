@@ -1,0 +1,25 @@
+.cartaz1{
+    width: 20%;
+    margin-left: 10%;
+    margin-top: 3%;
+    background-color: #2C343A;
+    border-radius: 15px;
+}
+
+.cartaz1 :hover{
+    border-color: #F6C500;
+}
+
+.cartazlado1 {
+    width: 20%;
+    margin-left: 2%;
+    margin-top: 3%;
+    background-color: #2C343A;
+    border-radius: 15px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.cartazlado1 :hover {
+    border-color: #F6C500;
+}

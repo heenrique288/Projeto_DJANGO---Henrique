@@ -1,0 +1,102 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <title>The Films dpt</title>
+        <link rel="stylesheet" href="{% static 'css/telafilmes.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Krona One' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+
+    </head>
+
+    <body>
+        <br>
+        <br>
+        <h1 class="filmesemcartaz">FILME EM CARTAZ</h1>
+        <br>
+        <br>
+        <div class="conteiner">
+            <img src="{% static 'css/imagens/o menino e a garça background.jpg' %}" class="filmeback">
+            <h3 class="cartazladofilme">
+                <p><img src="{% static 'css/imagens/o menino e a garça poster.jpg' %}" class="filmeduna"></p>
+                <br>
+                <br>
+                <p class="generofilme">O Menino e a Garça</p>
+                <br>
+                <p class="diretorfilme">Hayao Miyazaki</p>
+                <br>
+                <p class="duracaofilme"><i class="bi bi-clock-history"></i> 2 horas e 4 minutos<br><br></p>
+            </h3>
+        </div>
+
+        <main>
+            <br>
+            <br>
+            <h1 class="filmesemcartaz">SEÇÕES</h1>
+            <br>
+            <br>
+            <br>
+            <div class="conteiner">
+                <h4 class="secoes1">
+                    <a class="decoracao" href="{% url 'sala' %}"><p class="horariosecoes">13h30</p></a>
+                    <br>
+                </h4>
+                <h4 class="secoes">
+                    <a class="decoracao" href="{% url 'sala' %}"><p class="horariosecoes">14h20</p></a>
+                    <br>
+                </h4>
+                <h4 class="secoes">
+                    <a class="decoracao" href="{% url 'sala' %}"><p class="horariosecoes">15h10</p></a>
+                    <br>
+                </h4>
+                <h4 class="secoes">
+                    <a class="decoracao" href="{% url 'sala' %}"><p class="horariosecoes">16h</p></a>
+                    <br>
+                </h4>
+            </div>
+        </main>
+        
+
+
+
+        <nav class="menu-lateral">
+            <img src="{% static 'css/imagens/the film dpt..png' %}" class="banner">
+            <div class="btn-expandir">
+                <i class="bi bi-list" id="btn-exp"></i>
+            </div>
+
+            <ul>
+                <li class="item-menu">
+                    <a href="index.html">
+                        <span class="icon"><i class="bi bi-house"></i></span>
+                        <span class="txt-link">Home</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="{% url 'emcartaz' %}">
+                        <span class="icon"><i class="bi bi-camera-reels"></i></span>
+                        <span class="txt-link">Em Cartaz</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><i class="bi bi-cart-dash"></i></span>
+                        <span class="txt-link">Carrinho</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><i class="bi bi-person-circle"></i></span>
+                        <span class="txt-link">Perfil</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <script src="{% static 'css/menu.js' %}"></script>
+
+    </body>
+</head>
